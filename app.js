@@ -18,15 +18,15 @@ const main = async( ) => {
     //Se declara una variable llamada option y se inicializa con un string vacio
     let option = ' ';
 
-
     //Este bucle se ejecutará al menos una vez y continuará repitiéndose mientras la variable option no sea igual a '0'
     do{
         /*Este bucle do se ejecutará al menos una vez y continuará repitiéndose mientras la variable option no 
         esté en el rango válido de opciones*/
         do{
             /*Se utiliza la función mostrarMenu( ) para mostrar un menú al usuario y obtener la opción seleccionada.
-             El resultado se almacena en la variable option. */
+            El resultado se almacena en la variable option. */
             option = await mostrarMenu( );
+        //Mientras la opción elegida sea mayor o igual a cero y menor o igual a seis se mostrará el menú
         }while(! (option >=0 && option <=6))
 
         /*Si option no es igual a '0' (salir), se imprime un mensaje indicando que se ejecutará el proceso 
